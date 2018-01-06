@@ -107,7 +107,7 @@ function fnTab()
 	auto();
 	if(!window.BfnScore)
 	{
-		//fnScore();
+		fnScore();
 		window.BfnScore=true;
 	}
 	function auto()
@@ -163,7 +163,7 @@ function fnTab()
 
 
 
-/*
+
 
 
 function fnScore()
@@ -174,6 +174,7 @@ function fnScore()
 	for(var i=0;i<aLi.length;i++)
 	{
 		fn(aLi[i]);
+
 	}
 	function fn(oLi)
 	{
@@ -199,8 +200,10 @@ function fnScore()
 		}
 	}
 
-	fnIndex();
+	//fnIndex();
 }
+
+/*
 function fnInfo(oInfo,sInfo)
 {
 	oInfo.innerHTML=sInfo;

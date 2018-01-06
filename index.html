@@ -34,14 +34,14 @@
 	<section class="page">跳转页</section>
 
 	<!--首页-->
-	<section class="page pageShow">
+	<section class="page pageShow" id="index">
         <section id="tabPic">
             <ul id="picList">
             	<li><img src="images/1.jpg" alt=""></li>
             	<li><img src="images/2.jpg" alt=""></li>
             	<li><img src="images/3.jpg" alt=""></li>
             	<li><img src="images/4.jpg" alt=""></li>
-            	<li><img src="images/5.jpg" alt=""></li>
+            	<li><img src="images/5.jpg" alt=""></li> 
             </ul>
             <section class="picMask">
                  <p>成都九寨沟景区</p>
@@ -67,6 +67,7 @@
                     <a href="JavaScript:;"></a>
                     <a href="JavaScript:;"></a>
                   </nav>
+                  <input type="hidden" value="">
                </li>
 
                <li>
@@ -78,6 +79,7 @@
                     <a href="JavaScript:;"></a>
                     <a href="JavaScript:;"></a>
                   </nav>
+                  <input type="hidden" value="">
                </li>
 
                <li>
@@ -89,24 +91,63 @@
                     <a href="JavaScript:;"></a>
                     <a href="JavaScript:;"></a>
                   </nav>
+                  <input type="hidden" value="">
                </li>
-
-  
-
-
-
-           
             </ul>   
         </section>
+        <section class="tags">
+           <h2>给景区加点标签</h2>
+           <label>
+             <input type="radio" name="tags" value="服务好">
+             <span>服务好</span>
+           </label>
+           <label>
+             <input type="radio" name="tags" value="景色赞">
+             <span>景色赞</span>
+           </label>
+           <label>
+             <input type="radio" name="tags" value="千篇一律">
+             <span>千篇一律</span>
+           </label>
+           <label>
+             <input type="radio" name="tags" value="看人海">
+             <span>看人海</span>
+           </label>
+           <label>
+             <input type="radio" name="tags" value="挤爆了">
+             <span>挤爆了</span>
+           </label>
+           <label>
+             <input type="radio" name="tags" value="如厕难">
+             <span>如厕难</span>
+           </label>
+           <label>
+             <input type="radio" name="tags" value="贼贵">
+             <span>贼贵</span>
+           </label>
+           <label>
+             <input type="radio" name="tags" value="累挂了">
+             <span>累挂了</span>
+           </label>
+           <label>
+             <input type="radio" name="tags" value="再来一次">
+             <span>再来一次</span>
+           </label>
+           <label>
+             <input type="radio" name="tags" value="在也不来">
+             <span>在也不来</span>
+           </label>
 
-
+        </section>
+        <p class="info">提交景区评分</p>  
+        <input type="button" value="提交" class="btn">
 
 	</section>
 </body>
 </html>
 
 <script type="text/javascript">
-
+ fnTab();
  //fnLoad();
  document.body.style.height = view().h+"px";
 </script>
